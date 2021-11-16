@@ -1,3 +1,8 @@
+INSERT INTO `shop`
+	(`shop_name`, `address`)
+values
+	('MusicRoom Argents', '11 Denmark Street');
+
 INSERT INTO `sheet_music`
 	(`title`, `author`, `genre`, `price`, `shop_id`)
 values
