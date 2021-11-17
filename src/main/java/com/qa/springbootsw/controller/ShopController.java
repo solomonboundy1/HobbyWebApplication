@@ -56,7 +56,7 @@ public class ShopController {
 	
 	// Delete
 	@DeleteMapping("/delete/{id}")
-	public ResponseEntity<Shop> removePerson(@PathVariable Long id) {
+	public ResponseEntity<Shop> delete(@PathVariable Long id) {
 		return (this.service.deleteShop(id) == true) ? new ResponseEntity<Shop>(HttpStatus.NO_CONTENT)
 				: new ResponseEntity<Shop>(HttpStatus.INTERNAL_SERVER_ERROR);
 			

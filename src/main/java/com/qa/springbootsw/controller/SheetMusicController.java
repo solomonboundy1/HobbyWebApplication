@@ -31,6 +31,7 @@ public class SheetMusicController {
 	// Create
 	@PostMapping("/create")
 	public ResponseEntity<SheetMusic> create(@RequestBody SheetMusic sheetMusic) {
+	System.out.println(sheetMusic);
 		return new ResponseEntity<SheetMusic>(this.service.createSheetMusic(sheetMusic), HttpStatus.CREATED);
 	}
 		
@@ -56,7 +57,7 @@ public class SheetMusicController {
 	
 	// Delete
 	@DeleteMapping("/delete/{id}")
-	public ResponseEntity<SheetMusic> removePerson(@PathVariable Long id) {
+	public ResponseEntity<SheetMusic> delete(@PathVariable Long id) {
 		return (this.service.deleteSheetMusic(id) == true) ? new ResponseEntity<SheetMusic>(HttpStatus.NO_CONTENT)
 				: new ResponseEntity<SheetMusic>(HttpStatus.INTERNAL_SERVER_ERROR);
 			
