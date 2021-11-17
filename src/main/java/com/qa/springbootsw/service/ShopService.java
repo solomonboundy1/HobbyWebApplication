@@ -5,6 +5,8 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.qa.springbootsw.domain.Shop;
+import com.qa.springbootsw.exceptions.ShopNotFoundException;
+
 import com.qa.springbootsw.repo.ShopRepo;
 
 @Service
@@ -26,7 +28,7 @@ public class ShopService {
 	}
 	
 	public Shop getOne(Long id) {
-		return this.repo.findById(id).get();
+		return this.repo.findById(id).orElseThrow(ShopNotFoundException::new);
 	}
 	
 	
