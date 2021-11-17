@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.qa.springbootsw.domain.SheetMusic;
-
+import com.qa.springbootsw.exceptions.SheetMusicNotFoundException;
 import com.qa.springbootsw.repo.SheetMusicRepo;
 
 
@@ -28,7 +28,7 @@ private SheetMusicRepo repo;
 	}
 	
 	public SheetMusic getOne(Long id) {
-		return this.repo.findById(id).get();
+		return this.repo.findById(id).orElseThrow(SheetMusicNotFoundException::new);
 	}
 	
 	
