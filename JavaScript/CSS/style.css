@@ -91,6 +91,38 @@ html {
     opacity: 0;
 }
 
+.bannerAU {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+
+#h1AU {
+    font-family: 'Baloo Da 2', serif;
+    font-size: 8rem;
+    font-weight: 300;
+    color: rgb(148, 132, 79);
+    /* color: white; */
+    width: 50%;
+    line-height: 8rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    animation: moveBanner 1s .5s forwards;
+    opacity: 0;
+}
+
+#pAU {
+    font-family: 'mulish', serif;
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.473);
+    width: 70%;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+    animation: moveBanner 1s .7s forwards;
+    opacity: 0;
+}
+
 .hamburger-menu {
     width: 3rem;
     height: 3rem;
@@ -102,6 +134,11 @@ html {
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer;
+    transition: right 0.7s;
+}
+
+.change.hamburger-menu {
+    right: 33rem;
 }
 
 .line {
