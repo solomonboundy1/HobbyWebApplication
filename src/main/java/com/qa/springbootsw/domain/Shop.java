@@ -37,6 +37,13 @@ public class Shop {
 		
 		this.id = id;
 	}
+
+	public Shop(String shopName, String address) {
+		super();
+		this.shopName = shopName;
+		this.address = address;
+	}
+	
 	
 	
 

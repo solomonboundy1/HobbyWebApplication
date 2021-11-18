@@ -55,6 +55,18 @@ public class SheetMusic {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	
+	
+
+
+	public SheetMusic(String title, String author, String genre, double price, Shop shop) {
+		super();
+		this.title = title;
+		this.author = author;
+		this.genre = genre;
+		this.price = price;
+		this.shop = shop;
+	}
 
 
 	public SheetMusic(long sheetMusicId, String title, String author, String genre, double price, Shop shop) {

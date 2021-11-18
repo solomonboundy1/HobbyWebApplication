@@ -1,17 +1,14 @@
-DROP SCHEMA `hwa`;
 
-CREATE SCHEMA IF NOT EXISTS `hwa`;
 
-USE `hwa`
 
-DROP TABLE IF EXISTS `shop`;
 DROP TABLE IF EXISTS `sheet_music`;
+DROP TABLE IF EXISTS `shop`;
 
 CREATE TABLE `shop`
 (
-	`shop_id` BIGINT PRIMARY KEY AUTO_INCREMENT,
+	`id` BIGINT PRIMARY KEY AUTO_INCREMENT,
 	`shop_name` varchar(255) NOT NULL,
-	`shop_address` varchar(255) NOT NULL
+	`address` varchar(255) NOT NULL
 	);
 
 CREATE TABLE `sheet_music`
