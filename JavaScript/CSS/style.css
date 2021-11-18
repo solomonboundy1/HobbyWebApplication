@@ -123,6 +123,290 @@ html {
     opacity: 0;
 }
 
+.bannerCRUD {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+
+#CRUDh1CS {
+    font-family: 'Baloo Da 2', serif;
+    font-size: 8rem;
+    font-weight: 300;
+    color: rgb(148, 132, 79);
+    /* color: white; */
+    width: 50%;
+    line-height: 8rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    animation: moveBanner 1s .5s forwards;
+    opacity: 0;
+}
+
+#CRUDpCS {
+    font-family: 'mulish', serif;
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.473);
+    width: 70%;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+    animation: moveBanner 1s .7s forwards;
+    opacity: 0;
+}
+
+.CreateShopForm {
+    width: 50%;
+    animation: moveBanner 1s .9s forwards;
+    opacity: 0;
+}
+
+#CRUDh1RS {
+    font-family: 'Baloo Da 2', serif;
+    font-size: 8rem;
+    font-weight: 300;
+    color: rgb(148, 132, 79);
+    /* color: white; */
+    width: 50%;
+    line-height: 8rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    animation: moveBanner 1s .5s forwards;
+    opacity: 0;
+}
+
+#CRUDpRS {
+    font-family: 'mulish', serif;
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.473);
+    width: 70%;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+    animation: moveBanner 1s .7s forwards;
+    opacity: 0;
+}
+
+.ReadShopForm {
+    width: 50%;
+    animation: moveBanner 1s .9s forwards;
+    opacity: 0;
+}
+
+#ReadShopBtn {
+    width: 30%;
+}
+
+#ReadAllShopBtn {
+    width: 30%;
+}
+
+#CRUDh1US {
+    font-family: 'Baloo Da 2', serif;
+    font-size: 8rem;
+    font-weight: 300;
+    color: rgb(148, 132, 79);
+    /* color: white; */
+    width: 50%;
+    line-height: 8rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    animation: moveBanner 1s .5s forwards;
+    opacity: 0;
+}
+
+#CRUDpUS {
+    font-family: 'mulish', serif;
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.473);
+    width: 70%;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+    animation: moveBanner 1s .7s forwards;
+    opacity: 0;
+}
+
+.UpdateShopForm {
+    width: 50%;
+    animation: moveBanner 1s .9s forwards;
+    opacity: 0;
+}
+
+#CRUDh1DS {
+    font-family: 'Baloo Da 2', serif;
+    font-size: 8rem;
+    font-weight: 300;
+    color: rgb(148, 132, 79);
+    /* color: white; */
+    width: 50%;
+    line-height: 8rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    animation: moveBanner 1s .5s forwards;
+    opacity: 0;
+}
+
+#CRUDpDS {
+    font-family: 'mulish', serif;
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.473);
+    width: 70%;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+    animation: moveBanner 1s .7s forwards;
+    opacity: 0;
+}
+
+.DeleteShopForm {
+    width: 50%;
+    animation: moveBanner 1s .9s forwards;
+    opacity: 0;
+}
+
+#CRUDh1CSM {
+    font-family: 'Baloo Da 2', serif;
+    font-size: 8rem;
+    font-weight: 300;
+    color: rgb(148, 132, 79);
+    /* color: white; */
+    width: 50%;
+    line-height: 8rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    animation: moveBanner 1s .5s forwards;
+    opacity: 0;
+}
+
+#CRUDpCSM {
+    font-family: 'mulish', serif;
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.473);
+    width: 70%;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+    animation: moveBanner 1s .7s forwards;
+    opacity: 0;
+}
+
+.CreateSheetMusicForm {
+    width: 50%;
+    animation: moveBanner 1s .9s forwards;
+    opacity: 0;
+}
+
+#CRUDh1RSM {
+    font-family: 'Baloo Da 2', serif;
+    font-size: 8rem;
+    font-weight: 300;
+    color: rgb(148, 132, 79);
+    /* color: white; */
+    width: 50%;
+    line-height: 8rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    animation: moveBanner 1s .5s forwards;
+    opacity: 0;
+}
+
+#CRUDpRSM {
+    font-family: 'mulish', serif;
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.473);
+    width: 70%;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+    animation: moveBanner 1s .7s forwards;
+    opacity: 0;
+}
+
+.ReadSheetMusicForm {
+    width: 50%;
+    animation: moveBanner 1s .9s forwards;
+    opacity: 0;
+}
+
+#ReadSheetMusicBtn {
+    width: 30%;
+}
+
+#ReadAllSheetMusicBtn {
+    width: 30%;
+}
+
+#CRUDh1USM {
+    font-family: 'Baloo Da 2', serif;
+    font-size: 8rem;
+    font-weight: 300;
+    color: rgb(148, 132, 79);
+    /* color: white; */
+    width: 50%;
+    line-height: 8rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    animation: moveBanner 1s .5s forwards;
+    opacity: 0;
+}
+
+#CRUDpUSM {
+    font-family: 'mulish', serif;
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.473);
+    width: 70%;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+    animation: moveBanner 1s .7s forwards;
+    opacity: 0;
+}
+
+.UpdateSheetMusicForm {
+    width: 50%;
+    animation: moveBanner 1s .9s forwards;
+    opacity: 0;
+}
+
+.bannerCRUDUSM {
+    position: absolute;
+    top: 5%;
+    left: 15%;
+}
+
+#CRUDh1DSM {
+    font-family: 'Baloo Da 2', serif;
+    font-size: 8rem;
+    font-weight: 300;
+    color: rgb(148, 132, 79);
+    /* color: white; */
+    width: 50%;
+    line-height: 8rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    animation: moveBanner 1s .5s forwards;
+    opacity: 0;
+}
+
+#CRUDpDSM {
+    font-family: 'mulish', serif;
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.473);
+    width: 70%;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+    animation: moveBanner 1s .7s forwards;
+    opacity: 0;
+}
+
+.DeleteSheetMusicForm {
+    width: 50%;
+    animation: moveBanner 1s .9s forwards;
+    opacity: 0;
+}
+
 .hamburger-menu {
     width: 3rem;
     height: 3rem;
