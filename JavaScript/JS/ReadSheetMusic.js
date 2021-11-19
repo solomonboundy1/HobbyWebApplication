@@ -1,5 +1,14 @@
 let readAllSheetMusic = document.querySelector('#ReadAllSheetMusicBtn');
+let readSheetMusicBtn = document.querySelector('#ReadSheetMusicBtn');
+let inputReadSheetMusicId = document.querySelector('#inputReadSheetMusicId');
+const cardParent = document.querySelector('#cardList');
 
+let readId = () => {
+    let idValue = inputReadSheetMusicId.value;
+
+    viewOne(idValue);
+
+}
 let viewAll = () => {
 
 
@@ -18,13 +27,26 @@ let viewAll = () => {
         });
 
 }
+
+let viewOne = (id) => {
+
+    fetch(`http://localhost:9005/sheetmusic/getOne/${id}`)
+        .then((response) => {
+            response.json()
+                .then((data) => {
+                    console.log(data);
+                    createCards(data);
+                });
+        });
+
+}
 // New function to post data to my web page
 
 let createCards = (data) => {
 
     // First find my parent element
-    const cardParent = document.querySelector('#cardList');
 
+    console.log(cardParent);
     // Create a new card 
     const child = document.createElement('div');
     const childBody = document.createElement('div');
@@ -40,7 +62,7 @@ let createCards = (data) => {
     childAuthor.textContent = "Author: " + data.author;
     childGenre.textContent = "Genre: " + data.genre;
     childPrice.textContent = "Price: " + data.price;
-    childShopID.textContent = "Shop ID : " + data.shop_id;
+    childShopID.textContent = "Shop_Id : " + data.shop;
 
     // Modify the classes in my card
     childBody.className = "card-body";
@@ -53,7 +75,9 @@ let createCards = (data) => {
     childBody.appendChild(childPrice);
     childBody.appendChild(childShopID);
 
+
     child.appendChild(childBody);
+
 
     cardParent.appendChild(child);
 
@@ -62,3 +86,4 @@ let createCards = (data) => {
 }
 
 readAllSheetMusic.addEventListener('click', viewAll);
+readSheetMusicBtn.addEventListener('click', readId);
