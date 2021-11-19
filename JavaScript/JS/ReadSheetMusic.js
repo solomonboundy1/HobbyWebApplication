@@ -1,17 +1,23 @@
-fetch(`http://localhost:9005/Shop/getAll`)
-    .then((response) => {
-        response.json()
-            .then((data) => {
-                console.log(data);
-                console.log(data[0].name);
-                data.forEach((data) => {
-                    createCards(data);
-                })
+let readAllSheetMusic = document.querySelector('#ReadAllSheetMusicBtn');
 
-            });
-    });
+let viewAll = () => {
 
 
+
+    fetch(`http://localhost:9005/sheetmusic/getAll`)
+        .then((response) => {
+            response.json()
+                .then((data) => {
+                    console.log(data);
+                    console.log(data[0].name);
+                    data.forEach((data) => {
+                        createCards(data);
+                    })
+
+                });
+        });
+
+}
 // New function to post data to my web page
 
 let createCards = (data) => {
@@ -51,4 +57,8 @@ let createCards = (data) => {
 
     cardParent.appendChild(child);
 
+
+
 }
+
+readAllSheetMusic.addEventListener('click', viewAll);
