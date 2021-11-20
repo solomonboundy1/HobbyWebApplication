@@ -40,7 +40,9 @@ private WebDriver driver;
 		
 		// Assert
 		// Once the button is clicked the new url is NOT the uselessweb.com
+
 		Assertions.assertEquals("https://theuselessweb.com/", driver.getCurrentUrl());
+
 	}
 
 }
