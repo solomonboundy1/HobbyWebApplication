@@ -1,5 +1,7 @@
 'use strict';
 
+
+
 let deleteRequest = (id) => {
 
     fetch(`http://localhost:9005/shop/delete/${id}`, {
@@ -11,6 +13,7 @@ let deleteRequest = (id) => {
                 return;
             }
             console.log("delete successful!");
+
         });
 
 }

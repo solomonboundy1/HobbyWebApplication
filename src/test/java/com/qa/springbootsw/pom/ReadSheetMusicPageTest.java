@@ -10,39 +10,46 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class WebElementsTest {
+public class ReadSheetMusicPageTest {
+	
 private WebDriver driver;
 	
 	@BeforeEach
 	void setup( ) {
 		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
 		
-		// Our webdriver is being specified as a chrome driver
 		this.driver = new ChromeDriver(); 
-		
-		 // create a new browser window with these measurements
+
 		this.driver.manage().window().setSize(new Dimension(1366, 768));
 		System.out.println(driver);
+		
 	}
 	
 	@Test
-	public void testUseless() {
+	@Disabled
+	public void testCreateSheetMusicForm() {
 		
 		// Arrange
-		driver.get("https://theuselessweb.com/");
+		driver.get("http://127.0.0.1:5501/HTML/ReadSheetMusic.html");
 		
-		// Grab button we want to click
-		WebElement button = driver.findElement(By.id("button"));
-		System.out.println(button);
+		WebElement readButton = driver.findElement(By.id("ReadSheetMusicBtn"));
+
+		WebElement sheetMusicIdInput = driver.findElement(By.id("inputReadSheetMusicId"));
+		WebElement sheetMusicCard = driver.findElement(By.xpath("/html/body/div[2]/div/div/div"));
+
+		String ID = "1";
+		String card = "/html/body/div[2]/div/div/div";
+		
+		
+		
 		
 		// Act
-		button.click();
+		sheetMusicIdInput.sendKeys(ID);
+		readButton.click();
+		
 		
 		// Assert
-		// Once the button is clicked the new url is NOT the uselessweb.com
-
-		Assertions.assertEquals("https://theuselessweb.com/", driver.getCurrentUrl());
-
+		Assertions.assertEquals(card, sheetMusicCard);
 	}
 
 }

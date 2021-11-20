@@ -4,6 +4,7 @@ let inputUpdateShopAddress = document.querySelector('#inputUpdateShopAddress');
 let UpdateShopBtn = document.querySelector('#UpdateShopBtn');
 
 let inputUpdateShopId = document.querySelector('#inputUpdateShopId');
+const cardParent = document.querySelector('#cardListUpdate');
 
 
 let updateShop = (id) => {
@@ -21,9 +22,11 @@ let updateShop = (id) => {
         body: JSON.stringify(shop)
     }).then((response) => {
         response.json();
+
     })
         .then(() => {
             console.log(`succesful`);
+
         });
 
 };

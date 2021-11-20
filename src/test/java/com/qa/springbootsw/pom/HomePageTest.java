@@ -10,39 +10,56 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class WebElementsTest {
+public class HomePageTest {
+	
 private WebDriver driver;
 	
 	@BeforeEach
 	void setup( ) {
 		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
 		
-		// Our webdriver is being specified as a chrome driver
 		this.driver = new ChromeDriver(); 
-		
-		 // create a new browser window with these measurements
+
 		this.driver.manage().window().setSize(new Dimension(1366, 768));
 		System.out.println(driver);
+		
 	}
 	
 	@Test
-	public void testUseless() {
+	public void testHomePageButton() {
 		
 		// Arrange
-		driver.get("https://theuselessweb.com/");
+		driver.get("http://127.0.0.1:5501/HTML/Index.html");
 		
-		// Grab button we want to click
-		WebElement button = driver.findElement(By.id("button"));
+		
+		WebElement button = driver.findElement(By.id("discButton"));
 		System.out.println(button);
 		
 		// Act
 		button.click();
 		
 		// Assert
-		// Once the button is clicked the new url is NOT the uselessweb.com
-
-		Assertions.assertEquals("https://theuselessweb.com/", driver.getCurrentUrl());
-
+		Assertions.assertEquals("http://127.0.0.1:5501/HTML/AboutUs.html", driver.getCurrentUrl());
 	}
+	
+	@Test
+	@Disabled
+	public void testHamburgerButton() {
+		
+		driver.get("http://127.0.0.1:5501/HTML/Index.html");
+		
+		
+		WebElement button = driver.findElement(By.xpath("/html/body/div/div"));
+		
+		WebElement hamburgerClassChange = driver.findElement(By.className("hamburger-menu change"));
+		
+		button.click();
+		
+		String expectedClass = "hamburger-menu change";
+		
+		Assertions.assertEquals(expectedClass, hamburgerClassChange);
+	}
+	
+	
 
 }

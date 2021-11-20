@@ -2,7 +2,6 @@ package com.qa.springbootsw.pom;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
@@ -10,39 +9,53 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class WebElementsTest {
-private WebDriver driver;
+public class AboutUsPageTest {
+	
+	private WebDriver driver;
 	
 	@BeforeEach
 	void setup( ) {
 		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
 		
-		// Our webdriver is being specified as a chrome driver
 		this.driver = new ChromeDriver(); 
-		
-		 // create a new browser window with these measurements
+
 		this.driver.manage().window().setSize(new Dimension(1366, 768));
 		System.out.println(driver);
+		
 	}
 	
 	@Test
-	public void testUseless() {
+	public void testShopsButton() {
 		
 		// Arrange
-		driver.get("https://theuselessweb.com/");
+		driver.get("http://127.0.0.1:5501/HTML/AboutUs.html");
 		
-		// Grab button we want to click
-		WebElement button = driver.findElement(By.id("button"));
+		
+		WebElement button = driver.findElement(By.id("shopsBtn"));
 		System.out.println(button);
 		
 		// Act
 		button.click();
 		
 		// Assert
-		// Once the button is clicked the new url is NOT the uselessweb.com
-
-		Assertions.assertEquals("https://theuselessweb.com/", driver.getCurrentUrl());
-
+		Assertions.assertEquals("http://127.0.0.1:5501/HTML/shop.html", driver.getCurrentUrl());
+	}
+	
+	@Test
+	public void testSheetMusicButton() {
+		
+		// Arrange
+		driver.get("http://127.0.0.1:5501/HTML/AboutUs.html");
+		
+		
+		WebElement button = driver.findElement(By.id("sheetMusicBtn"));
+		System.out.println(button);
+		
+		// Act
+		button.click();
+		
+		// Assert
+		Assertions.assertEquals("http://127.0.0.1:5501/HTML/SheetMusic.html", driver.getCurrentUrl());
 	}
 
 }
