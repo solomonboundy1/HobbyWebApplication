@@ -12,7 +12,7 @@ What things you need to install the software and how to install them
 In order to  get started with the project you will need to download and install the following:
 - An IDE of your choice that supports Java (Eclipse is recommended)
 - An IDE that supports JavaScript
-- MySQL as well as MySQL Workbench
+- MySQL as well as MySQL Workbench (The database will be saved as 'hwa')
 - JUnit
 - Mockito
 - Selenium

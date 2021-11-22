@@ -4,7 +4,7 @@ let inputUpdateShopAddress = document.querySelector('#inputUpdateShopAddress');
 let UpdateShopBtn = document.querySelector('#UpdateShopBtn');
 
 let inputUpdateShopId = document.querySelector('#inputUpdateShopId');
-const cardParent = document.querySelector('#cardListUpdate');
+
 
 
 let updateShop = (id) => {

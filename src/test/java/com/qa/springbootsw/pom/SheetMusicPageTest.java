@@ -74,21 +74,21 @@ private WebDriver driver;
 		Assertions.assertEquals("http://127.0.0.1:5501/HTML/UpdateSheetMusic.html", driver.getCurrentUrl());
 	}
 	
-	@Test
-	public void testDeleteSheetMusicButton() {
-		
-		// Arrange
-		driver.get("http://127.0.0.1:5501/HTML/sheetMusic.html");
-		
-		
-		WebElement button = driver.findElement(By.id("deleteSheetMusicBtn"));
-		System.out.println(button);
-		
-		// Act
-		button.click();
-		
-		// Assert
-		Assertions.assertEquals("http://127.0.0.1:5501/HTML/DeleteSheetMusic.html", driver.getCurrentUrl());
-	}
+//	@Test
+//	public void testDeleteSheetMusicButton() {
+//		
+//		// Arrange
+//		driver.get("http://127.0.0.1:5501/HTML/sheetMusic.html");
+//		
+//		
+//		WebElement button = driver.findElement(By.id("deleteSheetMusicBtn"));
+//		System.out.println(button);
+//		
+//		// Act
+//		button.click();
+//		
+//		// Assert
+//		Assertions.assertEquals("http://127.0.0.1:5501/HTML/DeleteSheetMusic.html", driver.getCurrentUrl());
+//	}
 
 }

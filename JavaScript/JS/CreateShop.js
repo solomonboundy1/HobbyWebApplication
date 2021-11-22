@@ -19,7 +19,7 @@ createShopBtn.addEventListener('click', () => {
 
 
         shopName: `${createShopNameValue}`,
-        address: `${createShopAddressValue}`,
+        address: `${createShopAddressValue}`
 
 
     }
