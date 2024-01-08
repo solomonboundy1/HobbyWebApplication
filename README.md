@@ -36,7 +36,7 @@ next, clone the project down to your computer by following the commands on githu
 
 ## Running the tests
 
-We use three testing frameworks to test the functionality of the program; JUnit, Selenium and Mockito.
+I use three testing frameworks to test the functionality of the program; JUnit, Selenium and Mockito.
 
 JUnit is used for testing individual units or methods of classes, whereas mockito is used for integration testing to test the functionality between the SQL Database and the code in the java files.
 
@@ -50,7 +50,7 @@ This will also show the coverage percentage of which tests have passed and which
 To run the automation tests, do the same
 
 ### Unit Tests 
-We use JUnit for testing units.
+I use JUnit for testing units.
 
 Unit tests test the functionality of an individual method of a class, if the method is not working correctly you will see a red bar and an error along side a message within the console outlining the issue. Using the 'assertEquals' method, we are able to compare the outcome of the first argument within the parenthesis to the second argument, ensuring that they output the same outcome. 
 
@@ -70,7 +70,7 @@ Unit test example:
 ```
 
 ### Integration Tests 
-We use Mockito to for integration tests. We use this to test the functionality between the database and the java classes of the project.
+I use Mockito to for integration tests. I use this to test the functionality between the database and the java classes of the project.
 
 ```
 Here is an example of the syntax
@@ -98,7 +98,7 @@ Here is an example of the syntax
 
 ## Versioning
 
-We use [Git](https://git-scm.com/) for versioning.
+I use [Git](https://git-scm.com/) for versioning.
 
 ## Authors
 
